@@ -1,0 +1,1 @@
+content-auto-output-all
