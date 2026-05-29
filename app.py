@@ -95,7 +95,9 @@ INTERNAL_TEMPLATE = """
 
 # 模版 2：常规上币公告模版 
 PUBLIC_ANNOUNCEMENT_TEMPLATE = """
-**{{ world_premiere_tag }} {{ project_name }} ({{ ticker }}) Listed on KuCoin** KuCoin is proud to announce yet another great project coming to our Spot Trading platform.
+**{{ world_premiere_tag }} {{ project_name }} ({{ ticker }}) Listed on KuCoin** 
+
+KuCoin is proud to announce yet another great project coming to our Spot Trading platform.
 {{ project_name }} ({{ ticker }}) will be available on KuCoin!
 
 **Important Information**
@@ -139,7 +141,9 @@ PUBLIC_GEMPOOL_TEMPLATE = """
 **Introducing {{ project_name }} ({{ ticker }}) on KuCoin GemPool!**
 KuCoin is excited to announce that another great project, {{ project_name }} ({{ ticker }}), will be available on KuCoin GemPool.
 Users can stake their {{ dynamic_pool_text }} into separate pools to farm {{ ticker }} tokens!
+
 The trading of {{ project_name }} ({{ ticker }}) on KuCoin will start at {{ trading_time_utc }}.
+
 Check the [<font color="red">**Listing Announcement**</font>](https://www.kucoin.com/announcement/en-introducing-arena-two-atwo-on-kucoin-gempool) for more information.
 
 **About the Project**
@@ -195,27 +199,35 @@ During the campaign period, KCS holders participating in the GemPool activity ha
 | K2 (Voyager) | 10% |
 | K3 (Navigator) | 15% |
 | K4 (Pioneer) | 20% |
-
 * For details of the KCS loyalty bonus, please view this page: https://www.kucoin.com/kcs
 
 
-**Rewards Calculation** 1. Rewards per user = (user's staked token / total staked token of all eligible participants)  corresponding prize pool.
+**Rewards Calculation** 
+
+1. Rewards per user = (user's staked token / total staked token of all eligible participants)  corresponding prize pool.
 2. Snapshots of user balances and total pool balances will be taken multiple times at any point of time each hour to get users hourly average balances and calculate user rewards.
 3. Rewards will be calculated starting from the following hour after staking. User rewards will be updated hourly.
 
 Notes
 
 1. Once enable the Auto-Lock function, only rewards earned from GemPool event will be auto-locked. Your other balance remains unchanged;
-2. Tokens can only be staked in one pool at a time. For example, users cannot stake the same KCS into two different pools at the same time;
+2. Tokens can only be staked in one pool at a time.
+For example, users cannot stake the same KCS into two different pools at the same time;
 3. Rewards will be calculated and distributed every hour. Users can claim their rewards on an hourly basis;
 4. Users will be able to stake before the farming period, however no reward will be generated until the farming period starts;
-5. Users will be able to unstake their funds at any time with no delay and participate in any other available pools immediately. No reward will be generated after you unstake your tokens;
-6. Users will be able to manually claim the rewards each day. Tokens staked in each pool and any unclaimed rewards will be automatically credited to the user's Funding Account at the end of each farming period;
+5. Users will be able to unstake their funds at any time with no delay and participate in any other available pools immediately.
+No reward will be generated after you unstake your tokens;
+6. Users will be able to manually claim the rewards each day.
+Tokens staked in each pool and any unclaimed rewards will be automatically credited to the user's Funding Account at the end of each farming period;
 7. At the end of each pool's farming period, the funds staked by users are expected to be automatically returned within approximately 30 minutes;
 8. The users from the following countries/areas are not supported in this event: Singapore, Uzbekistan, Mainland China, Hong Kong Special Administrative Region, Thailand, Malaysia, Ontario, Canada, United Kingdom, United States of America, including all US territories;
 9. In case of any discrepancy between the translated version and the English original version, the English version shall prevail;
-10. The behavior of maliciously taking rewards will result in the cancellation of rewards. KuCoin reserves the final right to interpret these terms and conditions, including but not limited to the modification, change, or cancellation of the activity, without further notice. Please contact us if you have any questions;
-11. If users have doubts about the result of the activities, please note the official appeal period for the result of activities is 2 months after the end of the campaign. We will not accept any kind of appeal after this period.
+10. The behavior of maliciously taking rewards will result in the cancellation of rewards.
+KuCoin reserves the final right to interpret these terms and conditions, including but not limited to the modification, change, or cancellation of the activity, without further notice.
+Please contact us if you have any questions;
+
+11. If users have doubts about the result of the activities, please note the official appeal period for the result of activities is 2 months after the end of the campaign.
+We will not accept any kind of appeal after this period.
 
 [Sign Up on KuCoin Now](https://www.kucoin.com/ucenter/signup)
 
@@ -245,14 +257,23 @@ KuCoin is excited to announce that another great project, {{ project_name }} ({{
 **HODLer Airdrops Details ([Check Now](https://www.kucoin.com/hodler))**
 
 1. Token Name (Ticker): {{ project_name }} ({{ ticker }})
+
 2. Total Token Supply: {{ total_supply }} {{ ticker }}
+
 3. HODLer Airdrops Token Rewards: {{ hodler_rewards }} {{ ticker }}
+
 4. Minimum Holding Amount: 20 KCS
+
 5. Holding Hard Cap: 10,000 KCS (Average holdings that exceed the hard cap will be displayed and rewarded based on the hard cap value)
+
 6. Snapshot Period: {{ hodler_snapshot_period }}
+
 7. Airdrop Distribution: {{ hodler_distribution_time }} [Allocated {{ ticker }} airdrops will be distributed 100% to the Funding Account]
-8. Eligibility: To qualify for the airdrops, users must complete KYC/KYB verification from an eligible jurisdiction before the snapshot end time and have traded on KuCoin (Spot, Margin, Futures, or Trading Bot) within the past 90 days. Trades made after 16:00 UTC on 27 May are not counted.
-9. Learn more about KuCoin HODLer Airdrops via our [Announcement](https://www.kucoin.com/announcement/en-introducing-kucoin-hodler-airdrops-a-new-way-to-earn-by-holding) and in the [Help Center](https://www.kucoin.com/support/48142946141378).
+
+8. Eligibility: To qualify for the airdrops, users must complete KYC/KYB verification from an eligible jurisdiction before the snapshot end time and have traded on KuCoin (Spot, Margin, Futures, or Trading Bot) within the past 90 days.
+Trades made after 16:00 UTC on 27 May are not counted.
+
+Learn more about KuCoin HODLer Airdrops via our [Announcement](https://www.kucoin.com/announcement/en-introducing-kucoin-hodler-airdrops-a-new-way-to-earn-by-holding) and in the [Help Center](https://www.kucoin.com/support/48142946141378).
 
 **About the Project**
 
@@ -263,20 +284,19 @@ KuCoin is excited to announce that another great project, {{ project_name }} ({{
 **Addition Bonus**
 
 Bonus 1: Special Benefits for Loyal KCS Holders  Earn Up to 20% Bonus
-During the campaign period, KCS holders have the opportunity to enjoy an exclusive bonus, with the percentage depending on their KCS loyalty level.
 
+During the campaign period, KCS holders have the opportunity to enjoy an exclusive bonus, with the percentage depending on their KCS loyalty level.
 | Level | Bonus |
 | :---: | :---: |
 | K1 (Explorer) | 5% |
 | K2 (Voyager) | 10% |
 | K3 (Navigator) | 15% |
 | K4 (Pioneer) | 20% |
-
 * For details of the KCS loyalty bonus, please visit [KuCoin KCS](https://www.kucoin.com/kcs).
 
 Bonus 2: VIP Exclusive  Earn Up to 50% Bonus
-VIP users will get a chance to enjoy an exclusive bonus, which varies according to their VIP level.
 
+VIP users will get a chance to enjoy an exclusive bonus, which varies according to their VIP level.
 | VIP Level | Bonus |
 | :---: | :---: |
 | VIP 1  4 | 10% |
@@ -284,11 +304,12 @@ VIP users will get a chance to enjoy an exclusive bonus, which varies according 
 | VIP 9  12 | 50% |
 
 Bonus 3: New User Exclusive  Earn Up to 50% Bonus
+
 New users who registered and completed their identify verification during the snapshot period will be eligible for an exclusive bonus of up to 50%.
 
 Bonus 4: Futures Trading  Earn Up to 20% Bonus
-During the snapshot peroid, users who completed futures trading of any trading pair will share a bonus rate based on their trading volume!
 
+During the snapshot peroid, users who completed futures trading of any trading pair will share a bonus rate based on their trading volume!
 | Futures Trading Volume (USDT)| Bonus |
 | :---: | :---: |
 | 600 | 5% |
@@ -299,18 +320,31 @@ During the snapshot peroid, users who completed futures trading of any trading p
 Notes
 
 1. The holdings of required assets will be counted from Funding Account, Trading Account, Margin Account, Futures Account, Trading Bot Account, Financial Account, High-Frequency Trading Account and Wealth Account;
-2. Reward calculations are capped at the hard cap limit, holdings above the hard cap are not counted. Final Token Received = (Your Average Hourly Holdings / All Participants' Average Hourly Holdings)  Total Airdrop;
+2. Reward calculations are capped at the hard cap limit, holdings above the hard cap are not counted.
+Final Token Received = (Your Average Hourly Holdings / All Participants' Average Hourly Holdings)  Total Airdrop;
 3. Airdrop will be distributed to your Funding Account;
 4. The users from the following countries/areas are not supported in this event: The United States of America, including all US territories, Guam, Puerto Rico, Northern Mariana Islands, Central African Republic, Mainland China, Cuba, North Korea, Haiti, Hong Kong Special Administrative Region, Iran, Lebanon, Libya, Mali, Myanmar, Singapore, Somalia, South Sudan, Sudan, Uzbekistan, the Crimea region, the Kurdistan region, Canada, Malaysia, France, Yemen and the Netherlands;
-5. When spot trading begins, SHARE/USDT will be available for Trading Bots. The available services include: Spot Grid, Infinity Grid, DCA, Smart Rebalance, Spot Martingale, Spot Grid AI Plus and AI Spot Trend.
+5. When spot trading begins, SHARE/USDT will be available for Trading Bots.
+The available services include: Spot Grid, Infinity Grid, DCA, Smart Rebalance, Spot Martingale, Spot Grid AI Plus and AI Spot Trend.
 6. In case of any discrepancy between the translated version and the English original version, the English version shall prevail;
-7. The behavior of maliciously taking rewards will result in the cancellation of rewards. KuCoin reserves the final right to interpret these terms and conditions, including but not limited to the modification, change, or cancellation of the activity, without further notice. Please contact us if you have any questions;
-8. If users have doubts about the result of the activities, please note the official appeal period for the result of activities is 2 months after the end of the campaign. We will not accept any kind of appeal after this period.
+7. The behavior of maliciously taking rewards will result in the cancellation of rewards.
+KuCoin reserves the final right to interpret these terms and conditions, including but not limited to the modification, change, or cancellation of the activity, without further notice.
+Please contact us if you have any questions;
+8. If users have doubts about the result of the activities, please note the official appeal period for the result of activities is 2 months after the end of the campaign.
+We will not accept any kind of appeal after this period.
 9. Apple Inc. is not a sponsor and is not affiliated with this event.
 
-Disclaimer: This disclaimer governs your participation in the HODLer Airdrops "Campaign") on KuCoin's platform. By participating, you acknowledge that KuCoin facilitates the Campaign, while each project partner ("Reward Provider") sets its own eligibility and reward rules. KuCoin reserves the right to modify or terminate the Campaign at any time and is not liable for any issues related to rewards or technical problems. Inquiries should be directed to the Reward Provider. For the full disclaimer, please refer to the HODLer Airdrops landing page.
+Disclaimer: This disclaimer governs your participation in the HODLer Airdrops "Campaign") on KuCoin's platform.
+By participating, you acknowledge that KuCoin facilitates the Campaign, while each project partner ("Reward Provider") sets its own eligibility and reward rules.
+KuCoin reserves the right to modify or terminate the Campaign at any time and is not liable for any issues related to rewards or technical problems.
+Inquiries should be directed to the Reward Provider. For the full disclaimer, please refer to the HODLer Airdrops landing page.
 
-Risk Warning: Investing in cryptocurrency is akin to being a venture capital investor. The cryptocurrency market is available worldwide 24/7 for trading with no market close or open times. Please do your own risk assessment when deciding how to invest in cryptocurrency and blockchain technology. KuCoin attempts to screen all tokens before they come to market. However, even with the best due diligence, there are still risks when investing. KuCoin is not liable for investment gains or losses.
+Risk Warning: Investing in cryptocurrency is akin to being a venture capital investor.
+The cryptocurrency market is available worldwide 24/7 for trading with no market close or open times.
+Please do your own risk assessment when deciding how to invest in cryptocurrency and blockchain technology.
+KuCoin attempts to screen all tokens before they come to market.
+However, even with the best due diligence, there are still risks when investing.
+KuCoin is not liable for investment gains or losses.
 
 [Sign Up on KuCoin Now](https://www.kucoin.com/ucenter/signup)
 
@@ -375,7 +409,7 @@ st.sidebar.info(f"各部门方案提交截止时间默认为开交易前1天，�
 
 st.sidebar.subheader("预算与价格")
 
-# 引入是否有项目 activity 预算勾选开关
+# 引入是否有项目活动预算勾选开关
 has_budget = st.sidebar.checkbox("是否有项目活动预算？", value=True)
 
 if has_budget:
@@ -420,21 +454,12 @@ if has_budget:
                 activity_values[act] = calc_amt
             else:
                 state_key = f"amt_raw_store_{act}"
-                ui_key = f"amt_ui_{act}"
-                
                 if state_key not in st.session_state:
                     st.session_state[state_key] = "0"
                     
-                # 修复核心：在渲染输入框之前，确保输入框自带的内部 State 与我们业务逻辑里的格式化 SessionState 保持绝对独立和对齐
-                if ui_key in st.session_state and st.session_state[ui_key] != st.session_state[state_key]:
-                     st.session_state[ui_key] = st.session_state[state_key]
-
-                amt_text_input = st.sidebar.text_input(f" {act} (数量)", value=st.session_state[state_key], key=ui_key)
+                amt_text_input = st.sidebar.text_input(f" {act} (数量)", value=st.session_state[state_key], key=f"amt_ui_{act}")
                 act_amt_val, formatted_act_amt = parse_and_format_int(amt_text_input, default_val=0)
-                
-                # 独立保存每个人的格式化字符串
                 st.session_state[state_key] = formatted_act_amt
-                st.session_state[ui_key] = formatted_act_amt
                 
                 current_total_amt += float(act_amt_val)
                 activity_values[act] = act_amt_val
