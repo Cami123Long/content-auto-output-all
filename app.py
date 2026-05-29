@@ -21,7 +21,7 @@ def parse_and_format_int(val_str, default_val=0):
         return int_val, f"{int_val:,}"
     return default_val, f"{default_val:,}"
 
-# -----------------  新辅助函数：自动转换 HODLer 快照时间 -----------------
+# -----------------  辅助函数：自动转换 HODLer 快照时间 -----------------
 def convert_snapshot_time_to_utc(snapshot_str):
     """
     将用户输入的 '2026-05-22 16:00 to 2026-05-27 16:00 (UTC+8)' 
@@ -240,7 +240,7 @@ We will not accept any kind of appeal after this period.
 [Dive Into KuCoin's Global Communities](https://www.kucoin.com/land/community-collect)
 """
 
-# 模版 4：HODLer 专属上币公告模版 (上币 + 活动二合一)
+# 模版 4：HODLer 专属上币公告模版
 PUBLIC_HODLER_COMBINED_TEMPLATE = """
 **HODLer Airdrops: {{ project_name }} ({{ ticker }}) World Premiere Listing on KuCoin!**
 
@@ -405,7 +405,7 @@ try:
 except Exception:
     pass
 
-st.sidebar.info(f"各部门方案提交截止时间为：\n**{submit_deadline_str}**")
+st.sidebar.info(f"各部门方案提交截止时间默认为开交易前1天，即：\n**{submit_deadline_str}**，可按需修改")
 
 st.sidebar.subheader("预算与价格")
 
